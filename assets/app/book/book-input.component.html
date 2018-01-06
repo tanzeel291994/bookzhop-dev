@@ -1,0 +1,48 @@
+<div class="col-md-8 col-md-offset-2">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="form-group">
+            <label for="content">Name</label>
+            <input
+                    type="text"
+                    id="name"
+                    class="form-control"
+                    [ngModel]="book?.Name"
+                    name="name"
+                    required>
+                    <label for="content">Author</label>
+                    <input
+                            type="text"
+                            id="author"
+                            class="form-control"
+                            [ngModel]="book?.Author"
+                            name="author"
+                            required>
+                            <label for="content">Description</label>
+                            <input
+                                    type="text"
+                                    id="description"
+                                    class="form-control"
+                                    [ngModel]="book?.Description"
+                                    name="description"
+                                required>
+                                <label for="content">Price</label>
+                                <input
+                                        type="text"
+                                        id="price"
+                                        class="form-control"
+                                        [ngModel]="book?.Price"
+                                        name="price"
+                                    required>
+                                    <label for="content">Genre</label>
+                            <input
+                                    type="text"
+                                    id="genre"
+                                    class="form-control"
+                                    [ngModel]="book?.Genre"
+                                    name="genre"
+                                required>
+        </div>
+        <button type="button" class="btn btn-danger" (click)="onClear(f)">Clear</button>
+        <button class="btn btn-primary" type="submit">Save</button>
+    </form>
+</div>

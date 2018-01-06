@@ -1,0 +1,23 @@
+<article class="panel panel-default">
+    <div class="panel-body">
+        {{ book.Name }}
+    </div>
+    <div class="panel-body">
+        {{ book.Description }}
+    </div>
+    <div class="panel-body">
+        {{ book.Genre }}
+    </div>
+    <div class="panel-body">
+        {{ book.Price }}
+    </div>
+    <footer class="panel-footer">
+        <div class="author">
+            {{ book.Author }}
+        </div>
+        <div class="config">
+            <a (click)="onEdit()">Edit</a>
+            <a (click)="onDelete()">Delete</a>
+        </div>
+    </footer>
+</article>
